@@ -1,0 +1,1667 @@
+@charset "UTF-8";
+/*PALETA DE COLORES*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*COMIENZO DE CODIGO PARA VERSION CELULAR*/
+@media (min-width: 320px) {
+  /*SEGUNDA SECCION | ESPACIO PARA LA PRESENTACION - CODIGO CORRESPONDIENTE A VERSION CELULAR*/
+  .presentacion {
+    display: -ms-grid;
+    display: grid;
+    background-color: #416296;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 300px 500px;
+        grid-template-rows: 300px 500px;
+    padding: 5px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajauno" "cajados cajados";
+  }
+  .presentacion .presentacion__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: cajauno;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 50px;
+  }
+  .presentacion .presentacion__caja1 .presentacion__caja1--imagen {
+    height: 100%;
+  }
+  .presentacion .presentacion__caja2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: cajados;
+  }
+  .presentacion .presentacion__caja2 .presentacion__caja2--titulo {
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+    display: none;
+  }
+  .presentacion .presentacion__caja2 .presentacion__caja2--texto {
+    padding: 15px;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: justify;
+  }
+  /*TERCERA SECCION | ESPACIO PARA LOS SPONSORS - CODIGO CORRESPONDIENTE A VERSION CELULAR*/
+  .sponsors {
+    display: -ms-grid;
+    display: grid;
+    background-color: #6ac3dd;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 150px 150px;
+        grid-template-rows: 150px 150px;
+    padding: 5px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajados" "cajatres cajacuatro";
+  }
+  .sponsors .sponsors__caja {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+  }
+  .sponsors .sponsors__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: cajauno;
+  }
+  .sponsors .sponsors__caja2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: cajados;
+  }
+  .sponsors .sponsors__caja3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: cajatres;
+  }
+  .sponsors .sponsors__caja4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: cajacuatro;
+  }
+  .sponsors .sponsors__logo {
+    width: 90%;
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION TABLET*/
+/*COMIENZO DE CODIGO PARA VERSION DESKTOP*/
+@media (min-width: 1200px) {
+  /*SEGUNDA SECCION | ESPACIO PARA LA PRESENTACION - CODIGO PARA VERSION DESKTOP*/
+  .presentacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #416296;
+  }
+  .presentacion .presentacion__caja1 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .presentacion .presentacion__caja2 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 60%;
+  }
+  .presentacion .presentacion__caja2 .presentacion__caja2--titulo {
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+    display: block;
+  }
+  .presentacion .presentacion__caja2 .presentacion__caja2--texto {
+    padding-top: 15px;
+    padding-left: 0px;
+    color: white;
+    font-size: 19px;
+    font-weight: 300;
+  }
+  /*TERCERA SECCION | ESPACIO PARA LOS SPONSORS - CODIGO PARA VERSION DESKTOP*/
+  .sponsors {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#6ac3dd));
+    background-image: linear-gradient(white, #6ac3dd);
+    height: 50vh;
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION CELULAR*/
+@media (min-width: 320px) {
+  /*SECCION | ¿QUE ES EL FOOTGOLF? - CODIGO PARA VERSION CELULAR*/
+  .queEsElFootgolf {
+    display: -ms-grid;
+    display: grid;
+    background-color: #6ac3dd;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 300px 700px;
+        grid-template-rows: 300px 700px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajauno" "cajados cajados";
+  }
+  .queEsElFootgolf .queEsElFootgolf__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajauno;
+    background-image: url(../images/imgQueEsElFootgolfoptimizada.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+  .queEsElFootgolf .queEsElFootgolf__caja2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: cajados;
+    padding: 30px;
+    overflow: hidden;
+  }
+  .queEsElFootgolf .queEsElFootgolf__caja2 .queEsElFootgolf__caja2--titulo {
+    font-size: 22.5px;
+    text-align: center;
+    font-weight: 800;
+    color: white;
+  }
+  .queEsElFootgolf .queEsElFootgolf__caja2 .queEsElFootgolf__caja2--texto {
+    margin-top: 2.5rem;
+    color: white;
+    font-size: 13.5px;
+    font-weight: 300;
+  }
+  .queEsElFootgolf .queEsElFootgolf__caja2 .queEsElFootgolf__caja2--logo {
+    width: 25%;
+    float: right;
+    margin-top: 5rem;
+    display: none;
+  }
+  /*SECCION | EXPLICACION SOBRE TORNEOS - CODIGO PARA VERSION CELULAR*/
+  .torneos {
+    display: -ms-grid;
+    display: grid;
+    background-color: #416296;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 600px 725px;
+        grid-template-rows: 600px 725px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajauno" "cajados cajados";
+  }
+  .torneos .torneos__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajauno;
+    padding: 30px;
+    overflow: hidden;
+  }
+  .torneos .torneos__caja1 .torneos__caja1--titulo {
+    font-size: 22.5px;
+    font-weight: 800;
+    color: white;
+  }
+  .torneos .torneos__caja1 .torneos__caja1--texto {
+    margin-top: 2.5rem;
+    color: white;
+    font-size: 13.5px;
+    font-weight: 300;
+  }
+  .torneos .torneos__caja1 .torneos__subcaja1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 75px 75px;
+        grid-template-rows: 75px 75px;
+    padding-top: 30px;
+    gap: 5px;
+  }
+  .torneos .torneos__caja1 .torneos__subcaja1--escudo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .torneos .torneos__caja1 .escudo {
+    width: 100%;
+  }
+  .torneos .torneos__caja2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: cajados;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 30px;
+    overflow: hidden;
+  }
+  .torneos .torneos__caja2 .torneos__caja2--titulo {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #b79b52;
+  }
+  .torneos .torneos__caja2 .torneos__caja2--texto {
+    margin-top: 2.5rem;
+    color: white;
+    font-size: 13.5px;
+    font-weight: 300;
+  }
+  /*SECCION | CODIGO DE VESTIMENTA - CODIGO PARA VERSION CELULAR*/
+  .vestimenta {
+    display: -ms-grid;
+    display: grid;
+    background-color: white;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 350px 250px 250px;
+        grid-template-rows: 350px 250px 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajauno" "cajados cajatres" "cajacuatro cajacinco";
+  }
+  .vestimenta .vestimenta__caja {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 1px;
+  }
+  .vestimenta .vestimenta__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajauno;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+  }
+  .vestimenta .vestimenta__caja1 .vestimenta__caja1--titulo {
+    font-size: 22.5px;
+    font-weight: 800;
+    color: #6ac3dd;
+    text-align: center;
+  }
+  .vestimenta .vestimenta__caja1 .vestimenta__caja1--texto {
+    margin-top: 2.5rem;
+    color: black;
+    font-size: 13.5px;
+    font-weight: 300;
+  }
+  .vestimenta .vestimenta__caja2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: cajados;
+  }
+  .vestimenta .vestimenta__caja3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: cajatres;
+  }
+  .vestimenta .vestimenta__caja4 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: cajacuatro;
+  }
+  .vestimenta .vestimenta__caja5 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: cajacinco;
+  }
+  .vestimenta .vestimenta__caja6 {
+    grid-area: cajaseis;
+  }
+  .vestimenta .vestimenta__cajaimg {
+    width: 100%;
+  }
+  .vestimenta .vestimenta__cajatit {
+    font-size: 13.5px;
+    font-weight: 900;
+    color: black;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION TABLET*/
+@media (min-width: 768px) {
+  /*SECCION | ¿QUE ES EL FOOTGOLF? - CODIGO PARA VERSION TABLET*/
+  .queEsElFootgolf {
+    display: -ms-grid;
+    display: grid;
+    background-color: #6ac3dd;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 575px;
+        grid-template-rows: 575px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajados";
+  }
+  .queEsElFootgolf .queEsElFootgolf__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-area: cajauno;
+    background-image: url(../images/imgQueEsElFootgolfoptimizada.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+  .queEsElFootgolf .queEsElFootgolf__caja2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: cajados;
+    padding: 30px;
+    overflow: hidden;
+  }
+  .queEsElFootgolf .queEsElFootgolf__caja2 .queEsElFootgolf__caja2--titulo {
+    font-size: 22.5px;
+    text-align: left;
+    font-weight: 800;
+    color: white;
+    padding-top: 5px;
+  }
+  .queEsElFootgolf .queEsElFootgolf__caja2 .queEsElFootgolf__caja2--texto {
+    margin-top: 2.5rem;
+    color: white;
+    font-size: 13.5px;
+    font-weight: 300;
+  }
+  .queEsElFootgolf .queEsElFootgolf__caja2 .queEsElFootgolf__caja2--logo {
+    width: 25%;
+    float: right;
+    margin-top: 5rem;
+    display: none;
+  }
+  /*SECCION | EXPLICACION SOBRE TORNEOS - CODIGO PARA VERSION TABLET*/
+  .torneos {
+    display: -ms-grid;
+    display: grid;
+    background-color: #416296;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 700px;
+        grid-template-rows: 700px;
+    gap: 5px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajados";
+  }
+  .torneos .torneos__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-area: cajauno;
+    padding: 6rem;
+    padding-top: 1rem;
+    overflow: hidden;
+  }
+  .torneos .torneos__caja1 .torneos__caja1--titulo {
+    font-size: 22.5px;
+    font-weight: 800;
+    color: white;
+  }
+  .torneos .torneos__caja1 .torneos__caja1--texto {
+    margin-top: 2.5rem;
+    color: white;
+    font-size: 13.5px;
+    font-weight: 300;
+  }
+  .torneos .torneos__caja1 .torneos__subcaja1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 60px 60px;
+        grid-template-rows: 60px 60px;
+    padding-top: 5rem;
+    gap: 5px;
+  }
+  .torneos .torneos__caja1 .torneos__subcaja1--escudo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .torneos .torneos__caja1 .escudo {
+    width: 90%;
+  }
+  .torneos .torneos__caja2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: cajados;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 6rem;
+    overflow: hidden;
+  }
+  .torneos .torneos__caja2 .torneos__caja2--titulo {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #b79b52;
+  }
+  .torneos .torneos__caja2 .torneos__caja2--texto {
+    margin-top: 2.5rem;
+    color: white;
+    font-size: 13.5px;
+    font-weight: 300;
+  }
+  /*SECCION | CODIGO DE VESTIMENTA - CODIGO PARA VERSION TABLET*/
+  .vestimenta {
+    display: -ms-grid;
+    display: grid;
+    background-color: white;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 200px 200px;
+        grid-template-rows: 200px 200px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "espacio1 cajauno cajauno cajauno cajauno espacio2" "espacio3 cajados cajatres cajacuatro cajacinco espacio4";
+  }
+  .vestimenta .vestimenta__caja {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .vestimenta .vestimenta__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-area: cajauno;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+  }
+  .vestimenta .vestimenta__caja1 .vestimenta__caja1--titulo {
+    font-size: 22.5px;
+    font-weight: 800;
+    color: #6ac3dd;
+    text-align: center;
+  }
+  .vestimenta .vestimenta__caja1 .vestimenta__caja1--texto {
+    margin-top: 2.5rem;
+    color: black;
+    font-size: 13.5px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .vestimenta .vestimenta__caja2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: cajados;
+  }
+  .vestimenta .vestimenta__caja3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: cajatres;
+  }
+  .vestimenta .vestimenta__caja4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    grid-area: cajacuatro;
+  }
+  .vestimenta .vestimenta__caja5 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    grid-area: cajacinco;
+  }
+  .vestimenta .vestimenta__caja6 {
+    grid-area: cajaseis;
+  }
+  .vestimenta .vestimenta__cajaimg {
+    width: 100%;
+  }
+  .vestimenta .vestimenta__cajatit {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: black;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION DESKTOP*/
+@media (min-width: 1200px) {
+  /*SECCION | ¿QUE ES EL FOOTGOLF? - CODIGO PARA VERSION DESKTOP*/
+  .queEsElFootgolf {
+    display: -ms-grid;
+    display: grid;
+    background-color: #6ac3dd;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 800px;
+        grid-template-rows: 800px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajados";
+  }
+  .queEsElFootgolf .queEsElFootgolf__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-area: cajauno;
+    background-image: url(../images/imgQueEsElFootgolfoptimizada.jpg);
+    background-size: cover;
+    background-position: bottom;
+  }
+  .queEsElFootgolf .queEsElFootgolf__caja2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: cajados;
+    padding: 60px;
+    overflow: hidden;
+  }
+  .queEsElFootgolf .queEsElFootgolf__caja2 .queEsElFootgolf__caja2--titulo {
+    font-size: 40px;
+    text-align: left;
+    font-weight: 800;
+    color: white;
+    padding-top: 40px;
+  }
+  .queEsElFootgolf .queEsElFootgolf__caja2 .queEsElFootgolf__caja2--texto {
+    margin-top: 2.5rem;
+    color: white;
+    font-size: 17.5px;
+    font-weight: 300;
+  }
+  .queEsElFootgolf .queEsElFootgolf__caja2 .queEsElFootgolf__caja2--logo {
+    width: 25%;
+    float: right;
+    margin-top: 5rem;
+    display: block;
+  }
+  /*SECCION | EXPLICACION SOBRE TORNEOS - CODIGO PARA VERSION DESKTOP*/
+  .torneos {
+    display: -ms-grid;
+    display: grid;
+    background-color: #416296;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 750px;
+        grid-template-rows: 750px;
+    gap: 5px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajados";
+  }
+  .torneos .torneos__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-area: cajauno;
+    padding: 6rem;
+    overflow: hidden;
+  }
+  .torneos .torneos__caja1 .torneos__caja1--titulo {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+  }
+  .torneos .torneos__caja1 .torneos__caja1--texto {
+    margin-top: 2.5rem;
+    color: white;
+    font-size: 17.5px;
+    font-weight: 300;
+  }
+  .torneos .torneos__caja1 .torneos__subcaja1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 120px 120px;
+        grid-template-rows: 120px 120px;
+    padding-top: 5rem;
+    gap: 5px;
+  }
+  .torneos .torneos__caja1 .torneos__subcaja1--escudo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .torneos .torneos__caja1 .escudo {
+    width: 85%;
+  }
+  .torneos .torneos__caja2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: cajados;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 6rem;
+    overflow: hidden;
+  }
+  .torneos .torneos__caja2 .torneos__caja2--titulo {
+    font-size: 17.5px;
+    font-weight: 600;
+    color: #b79b52;
+  }
+  .torneos .torneos__caja2 .torneos__caja2--texto {
+    margin-top: 2.5rem;
+    color: white;
+    font-size: 17.5px;
+    font-weight: 300;
+  }
+  /*SECCION | CODIGO DE VESTIMENTA - CODIGO PARA VERSION DESKTOP*/
+  .vestimenta {
+    display: -ms-grid;
+    display: grid;
+    background-color: white;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 200px 400px;
+        grid-template-rows: 200px 400px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "espacio1 cajauno cajauno cajauno cajauno espacio2" "espacio3 cajados cajatres cajacuatro cajacinco espacio4";
+  }
+  .vestimenta .vestimenta__caja {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .vestimenta .vestimenta__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-area: cajauno;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+  }
+  .vestimenta .vestimenta__caja1 .vestimenta__caja1--titulo {
+    font-size: 40px;
+    font-weight: 800;
+    color: #6ac3dd;
+    text-align: center;
+  }
+  .vestimenta .vestimenta__caja1 .vestimenta__caja1--texto {
+    margin-top: 2.5rem;
+    color: black;
+    font-size: 17.5px;
+    font-weight: 300;
+  }
+  .vestimenta .vestimenta__caja2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: cajados;
+  }
+  .vestimenta .vestimenta__caja3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: cajatres;
+  }
+  .vestimenta .vestimenta__caja4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    grid-area: cajacuatro;
+  }
+  .vestimenta .vestimenta__caja5 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    grid-area: cajacinco;
+  }
+  .vestimenta .vestimenta__caja6 {
+    grid-area: cajaseis;
+  }
+  .vestimenta .vestimenta__cajaimg {
+    width: 100%;
+  }
+  .vestimenta .vestimenta__cajatit {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: black;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION CELULAR*/
+@media (min-width: 320px) {
+  /*CODIGO GENERAL PARA LAS 3 SECCIONES - CODIGO PARA VERSION CELULAR*/
+  .edicion {
+    display: -ms-grid;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.05);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 600px 600px;
+        grid-template-rows: 600px 600px;
+    padding: 1px;
+    gap: 1px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajauno" "cajados cajados";
+  }
+  .edicion .edicion__titulo {
+    font-size: 22.5px;
+    font-weight: 800;
+    color: #6ac3dd;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+  .edicion .edicion__subtitulo {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #416296;
+    padding-bottom: 20px;
+  }
+  .edicion .edicion__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajauno;
+    background-position: center;
+    padding: 10px;
+  }
+  .edicion .edicion__caja2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajados;
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION TABLET*/
+/*COMIENZO DE CODIGO PARA VERSION DESKTOP*/
+@media (min-width: 1200px) {
+  /*CODIGO GENERAL PARA LAS 3 SECCIONES - CODIGO PARA VERSION DESKTOP*/
+  .edicion {
+    display: -ms-grid;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.05);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 600px;
+        grid-template-rows: 600px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajados";
+  }
+  .edicion .edicion__titulo {
+    font-size: 40px;
+    font-weight: 800;
+    color: #6ac3dd;
+    padding-bottom: 10px;
+  }
+  .edicion .edicion__subtitulo {
+    font-size: 17.5px;
+    font-weight: 600;
+    color: #416296;
+    padding-bottom: 20px;
+  }
+  .edicion .edicion__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: cajauno;
+    background-position: center;
+    padding: 40px;
+  }
+  .edicion .edicion__caja2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: cajados;
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION CELULAR*/
+@media (min-width: 320px) {
+  /*UNICA SECCION DIVIDIDA EN TRES CAJAS - CODIGO PARA VERSION CELULAR*/
+  .contacto {
+    display: -ms-grid;
+    display: grid;
+    background-color: #416296;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 150px 500px 300px;
+        grid-template-rows: 150px 500px 300px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajauno" "cajados cajados" "cajatres cajatres";
+  }
+  .contacto .contacto__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajauno;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6ac3dd), to(white));
+    background-image: linear-gradient(#6ac3dd, white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacto .contacto__caja1 .contacto__caja1--titulo {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 900;
+    color: #1a1a1f;
+  }
+  .contacto .contacto__caja2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajados;
+    padding: 30px;
+  }
+  .contacto .contacto__caja2 .contacto__caja2--titulo {
+    font-size: 17.5px;
+    font-weight: 800;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .contacto .contacto__caja2 .form-label {
+    font-size: 13.5px;
+    color: white;
+  }
+  .contacto .contacto__caja2 .form-control {
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 13.5px;
+  }
+  .contacto .contacto__caja2 .btn {
+    font-size: 13.5px;
+    background-color: #6ac3dd;
+  }
+  .contacto .contacto__caja3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajatres;
+    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .contacto .contacto__caja3 h2 {
+    font-size: 17.5px;
+    font-weight: 800;
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+  .contacto .contacto__caja3 .contacto__caja3--item {
+    height: 60px;
+  }
+  .contacto .contacto__caja3 .contacto__caja3--item .ico {
+    width: 30px;
+  }
+  .contacto .contacto__caja3 .contacto__caja3--item p {
+    margin: 5px;
+    margin-left: 22.5px;
+    font-size: 13.5px;
+    color: white;
+  }
+  .contacto .contacto__caja3 .contacto__caja3--item a {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION TABLET*/
+/*COMIENZO DE CODIGO PARA VERSION DESKTOP*/
+@media (min-width: 1200px) {
+  /*UNICA SECCION DIVIDIDA EN TRES CAJAS - CODIGO PARA VERSION DESKTOP*/
+  .contacto {
+    display: -ms-grid;
+    display: grid;
+    background-color: #416296;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 350px 600px;
+        grid-template-rows: 350px 600px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajauno" "cajados cajatres";
+  }
+  .contacto .contacto__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajauno;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6ac3dd), to(white));
+    background-image: linear-gradient(#6ac3dd, white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacto .contacto__caja1 .contacto__caja1--titulo {
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 900;
+    color: #1a1a1f;
+  }
+  .contacto .contacto__caja2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: cajados;
+    padding: 40px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  .contacto .contacto__caja2 .contacto__caja2--titulo {
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .contacto .contacto__caja2 .form-label {
+    font-size: 17.5px;
+    color: white;
+  }
+  .contacto .contacto__caja2 .form-control {
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 17.5px;
+  }
+  .contacto .contacto__caja2 .btn {
+    font-size: 17.5px;
+    background-color: #6ac3dd;
+  }
+  .contacto .contacto__caja3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: cajatres;
+    padding: 40px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  .contacto .contacto__caja3 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .contacto .contacto__caja3 .contacto__caja3--item {
+    height: 60px;
+  }
+  .contacto .contacto__caja3 .contacto__caja3--item .ico {
+    width: 35px;
+  }
+  .contacto .contacto__caja3 .contacto__caja3--item p {
+    margin: 5px;
+    margin-left: 22.5px;
+    font-size: 17.5px;
+    color: white;
+  }
+  .contacto .contacto__caja3 .contacto__caja3--item a {
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION CELULAR*/
+@media (min-width: 320px) {
+  /*UNICA SECCION DIVIDIDA EN TRES CAJAS - CODIGO PARA VERSION CELULAR*/
+  .inscripcion {
+    display: -ms-grid;
+    display: grid;
+    background-color: #416296;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 150px 600px 600px;
+        grid-template-rows: 150px 600px 600px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajauno" "cajados cajados" "cajatres cajatres";
+  }
+  .inscripcion .inscripcion__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajauno;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6ac3dd), to(white));
+    background-image: linear-gradient(#6ac3dd, white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inscripcion .inscripcion__caja1 .inscripcion__caja1--titulo {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 900;
+    color: #1a1a1f;
+  }
+  .inscripcion .inscripcion__caja2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajados;
+    padding: 30px;
+  }
+  .inscripcion .inscripcion__caja2 .inscripcion__caja2--titulo {
+    font-size: 17.5px;
+    font-weight: 800;
+    color: white;
+    padding-bottom: 30px;
+  }
+  .inscripcion .inscripcion__texto {
+    color: black;
+    font-size: 13.5px;
+    font-weight: 300;
+  }
+  .inscripcion .inscripcion__caja3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajatres;
+    padding: 30px;
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION TABLET*/
+/*COMIENZO DE CODIGO PARA VERSION DESKTOP*/
+@media (min-width: 1200px) {
+  /*UNICA SECCION DIVIDIDA EN TRES CAJAS - CODIGO PARA VERSION DESKTOP*/
+  .inscripcion {
+    display: -ms-grid;
+    display: grid;
+    background-color: #416296;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 350px 600px;
+        grid-template-rows: 350px 600px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajauno" "cajados cajatres";
+  }
+  .inscripcion .inscripcion__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajauno;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6ac3dd), to(white));
+    background-image: linear-gradient(#6ac3dd, white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inscripcion .inscripcion__caja1 .inscripcion__caja1--titulo {
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 900;
+    color: #1a1a1f;
+  }
+  .inscripcion .inscripcion__caja2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: cajados;
+    padding: 40px;
+  }
+  .inscripcion .inscripcion__caja2 .inscripcion__caja2--titulo {
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .inscripcion .inscripcion__texto {
+    color: black;
+    font-size: 17.5px;
+    font-weight: 300;
+  }
+  .inscripcion .inscripcion__caja3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: cajatres;
+    padding: 40px;
+  }
+}
+
+.pruebadiv {
+  -webkit-transition: height 2s, width 1s;
+  transition: height 2s, width 1s;
+  background-color: red;
+}
+
+.pruebadiv:hover {
+  background-color: blue;
+}
+
+.cabecera__caja1--logo {
+  width: 100%;
+}
+
+.nav-item {
+  font-size: 15.5px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/*COMIENZO DE CODIGO PARA VERSION CELULAR*/
+@media (min-width: 320px) {
+  .pie {
+    display: -ms-grid;
+    display: grid;
+    background-color: #1a1a1f;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 250px 195px 195px 222.5px 172.5px 0px 250px 250px 0px 100px;
+        grid-template-rows: 250px 195px 195px 222.5px 172.5px 0px 250px 250px 0px 100px;
+    border: 1px solid black;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajauno" "cajados cajados" "cajatres cajatres" "cajacuatro cajacuatro" "cajacinco cajacinco" "cajaseis cajaseis" "cajasiete cajasiete" "cajaocho cajaocho" "cajanueve cajanueve" "cajadiez cajadiez";
+  }
+  .pie__caja {
+    padding-top: 20px;
+  }
+  .pie__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajauno;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pie__caja2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajados;
+  }
+  .pie__caja3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajatres;
+  }
+  .pie__caja4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajacuatro;
+  }
+  .pie__caja5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajacinco;
+  }
+  .pie__caja6 {
+    display: none;
+  }
+  .pie__caja7 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajasiete;
+  }
+  .pie__caja8 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajaocho;
+  }
+  .pie__caja9 {
+    display: none;
+  }
+  .pie__caja10 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajadiez;
+    padding: 20px;
+  }
+  .pietitulo {
+    color: #6ac3dd;
+    margin: 1rem;
+    font-size: 17.5px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  .pietexto {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .pie__menu--elemento {
+    padding-top: 1rem;
+    list-style: none;
+    font-size: 14px;
+  }
+  .pie__a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION TABLET*/
+@media (min-width: 768px) {
+  .pie {
+    display: -ms-grid;
+    display: grid;
+    background-color: #1a1a1f;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 250px 250px 250px 50px;
+        grid-template-rows: 250px 250px 250px 50px;
+    border: 1px solid black;
+    padding: 30px 50px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajados cajatres" "cajacuatro cajacinco cajaseis" "cajasiete cajaocho cajanueve" "cajadiez cajadiez cajadiez";
+  }
+  .pie__caja {
+    background-color: rgba(255, 255, 255, 0);
+    padding-top: 20px;
+  }
+  .pie__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: cajauno;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pie__caja2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: cajados;
+  }
+  .pie__caja3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: cajatres;
+  }
+  .pie__caja4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: cajacuatro;
+  }
+  .pie__caja5 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: cajacinco;
+  }
+  .pie__caja6 {
+    display: block;
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: cajaseis;
+  }
+  .pie__caja7 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: cajasiete;
+  }
+  .pie__caja8 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: cajaocho;
+  }
+  .pie__caja9 {
+    display: block;
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: cajanueve;
+  }
+  .pie__caja10 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: cajadiez;
+  }
+  .pietitulo {
+    color: #6ac3dd;
+    margin: 1rem;
+    font-size: 15.5px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  .pietexto {
+    color: white;
+    font-size: 15.5px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .pie__menu--elemento {
+    padding-top: 1rem;
+    list-style: none;
+  }
+  .pie__a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION DESKTOP*/
+@media (min-width: 1200px) {
+  .pie {
+    display: -ms-grid;
+    display: grid;
+    background-color: #1a1a1f;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 250px 250px 50px;
+        grid-template-rows: 250px 250px 50px;
+    border: 1px solid black;
+    padding: 30px 50px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajados cajatres cajacuatro cajacinco cajaseis" "cajasiete cajasiete cajaocho cajaocho cajanueve cajanueve" "cajadiez cajadiez cajadiez cajadiez cajadiez cajadiez";
+  }
+  .pie__caja {
+    background-color: rgba(255, 255, 255, 0);
+    padding-top: 20px;
+  }
+  .pie__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: cajauno;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pie__caja2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: cajados;
+  }
+  .pie__caja3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: cajatres;
+  }
+  .pie__caja4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    grid-area: cajacuatro;
+  }
+  .pie__caja5 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    grid-area: cajacinco;
+  }
+  .pie__caja6 {
+    display: block;
+    -ms-grid-row: 1;
+    -ms-grid-column: 6;
+    grid-area: cajaseis;
+  }
+  .pie__caja7 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajasiete;
+  }
+  .pie__caja8 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: cajaocho;
+  }
+  .pie__caja9 {
+    display: block;
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-area: cajanueve;
+  }
+  .pie__caja10 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-area: cajadiez;
+  }
+  .pietitulo {
+    color: #6ac3dd;
+    margin: 1rem;
+    font-size: 17.5px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  .pietexto {
+    color: white;
+    font-size: 17.5px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .pie__menu--elemento {
+    padding-top: 1rem;
+    list-style: none;
+  }
+  .pie__a {
+    text-decoration: none;
+    color: white;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

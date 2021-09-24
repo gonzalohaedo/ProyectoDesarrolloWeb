@@ -1,0 +1,122 @@
+/*COMIENZO DE CODIGO PARA VERSION CELULAR*/
+@media (min-width: 320px) {
+  /*SEGUNDA SECCION | ESPACIO PARA LA PRESENTACION - CODIGO CORRESPONDIENTE A VERSION CELULAR*/
+  .presentacion {
+    display: grid;
+    background-color: $color1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 500px;
+    padding: 5px;
+    gap: 5px;
+    justify-content: center;
+    grid-template-areas: "cajauno cajauno" "cajados cajados";
+    .presentacion__caja1 {
+      grid-area: cajauno;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+      .presentacion__caja1--imagen {
+        height: 100%;
+      }
+    }
+    .presentacion__caja2 {
+      grid-area: cajados;
+      .presentacion__caja2--titulo {
+        font-size: 4rem;
+        font-weight: 800;
+        color: white;
+        display: none;
+      }
+      .presentacion__caja2--texto {
+        padding: 15px;
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: justify;
+      }
+    }
+  }
+
+  /*TERCERA SECCION | ESPACIO PARA LOS SPONSORS - CODIGO CORRESPONDIENTE A VERSION CELULAR*/
+  .sponsors {
+    display: grid;
+    background-color: $color2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px;
+    padding: 5px;
+    gap: 5px;
+    justify-content: center;
+    grid-template-areas: "cajauno cajados" "cajatres cajacuatro";
+    .sponsors__caja {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .sponsors__caja1 {
+      grid-area: cajauno;
+    }
+    .sponsors__caja2 {
+      grid-area: cajados;
+    }
+    .sponsors__caja3 {
+      grid-area: cajatres;
+    }
+    .sponsors__caja4 {
+      grid-area: cajacuatro;
+    }
+    .sponsors__logo {
+      width: 90%;
+    }
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION TABLET*/
+@media (min-width: 768px) {
+}
+
+/*COMIENZO DE CODIGO PARA VERSION DESKTOP*/
+@media (min-width: 1200px) {
+  /*SEGUNDA SECCION | ESPACIO PARA LA PRESENTACION - CODIGO PARA VERSION DESKTOP*/
+  .presentacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $color1;
+    .presentacion__caja1 {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+    .presentacion__caja2 {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+      width: 60%;
+      .presentacion__caja2--titulo {
+        font-size: 4rem;
+        font-weight: 800;
+        color: white;
+        display: block;
+      }
+      .presentacion__caja2--texto {
+        padding-top: 15px;
+        padding-left: 0px;
+        color: white;
+        font-size: 19px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  /*TERCERA SECCION | ESPACIO PARA LOS SPONSORS - CODIGO PARA VERSION DESKTOP*/
+  .sponsors {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    background-image: linear-gradient(white, $color2);
+    height: 50vh;
+  }
+}

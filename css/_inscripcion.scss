@@ -1,0 +1,96 @@
+/*COMIENZO DE CODIGO PARA VERSION CELULAR*/
+@media (min-width: 320px) {
+  /*UNICA SECCION DIVIDIDA EN TRES CAJAS - CODIGO PARA VERSION CELULAR*/
+  .inscripcion {
+    display: grid;
+    background-color: $color1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 600px 600px;
+    gap: 5px;
+    justify-content: center;
+    grid-template-areas: "cajauno cajauno" "cajados cajados" "cajatres cajatres";
+    .inscripcion__caja1 {
+      grid-area: cajauno;
+      background-image: linear-gradient($color2, white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .inscripcion__caja1--titulo {
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 900;
+        color: $color4;
+      }
+    }
+    .inscripcion__caja2 {
+      grid-area: cajados;
+      padding: 30px;
+      .inscripcion__caja2--titulo {
+        font-size: 17.5px;
+        font-weight: 800;
+        color: white;
+        padding-bottom: 30px;
+      }
+    }
+    .inscripcion__texto {
+      color: black;
+      font-size: 13.5px;
+      font-weight: 300;
+    }
+    .inscripcion__caja3 {
+      grid-area: cajatres;
+      padding: 30px;
+    }
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION TABLET*/
+@media (min-width: 768px) {
+}
+
+/*COMIENZO DE CODIGO PARA VERSION DESKTOP*/
+@media (min-width: 1200px) {
+  /*UNICA SECCION DIVIDIDA EN TRES CAJAS - CODIGO PARA VERSION DESKTOP*/
+  .inscripcion {
+    display: grid;
+    background-color: $color1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px 600px;
+    gap: 5px;
+    justify-content: center;
+    grid-template-areas: "cajauno cajauno" "cajados cajatres";
+    .inscripcion__caja1 {
+      grid-area: cajauno;
+      background-image: linear-gradient($color2, white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .inscripcion__caja1--titulo {
+        font-size: 70px;
+        font-style: italic;
+        font-weight: 900;
+        color: $color4;
+      }
+    }
+    .inscripcion__caja2 {
+      grid-area: cajados;
+      padding: 40px;
+      .inscripcion__caja2--titulo {
+        font-size: 30px;
+        font-weight: 800;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 30px;
+      }
+    }
+    .inscripcion__texto {
+      color: black;
+      font-size: 17.5px;
+      font-weight: 300;
+    }
+    .inscripcion__caja3 {
+      grid-area: cajatres;
+      padding: 40px;
+    }
+  }
+}

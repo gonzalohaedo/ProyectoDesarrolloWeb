@@ -1,0 +1,221 @@
+/*COMIENZO DE CODIGO PARA VERSION CELULAR*/
+@media (min-width: 320px) {
+  .pie {
+    display: grid;
+    background-color: $color4;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 195px 195px 222.5px 172.5px 0px 250px 250px 0px 100px;
+    border: 1px solid black;
+    justify-content: center;
+    grid-template-areas: "cajauno cajauno" "cajados cajados" "cajatres cajatres" "cajacuatro cajacuatro" "cajacinco cajacinco" "cajaseis cajaseis" "cajasiete cajasiete" "cajaocho cajaocho" "cajanueve cajanueve" "cajadiez cajadiez";
+  }
+  .pie__caja {
+    padding-top: 20px;
+  }
+  .pie__caja1 {
+    grid-area: cajauno;
+    display: flex;
+    flex-direction: column;
+  }
+  .pie__caja2 {
+    grid-area: cajados;
+  }
+  .pie__caja3 {
+    grid-area: cajatres;
+  }
+  .pie__caja4 {
+    grid-area: cajacuatro;
+  }
+  .pie__caja5 {
+    grid-area: cajacinco;
+  }
+  .pie__caja6 {
+    display: none;
+  }
+  .pie__caja7 {
+    grid-area: cajasiete;
+  }
+  .pie__caja8 {
+    grid-area: cajaocho;
+  }
+  .pie__caja9 {
+    display: none;
+  }
+  .pie__caja10 {
+    grid-area: cajadiez;
+    padding: 20px;
+  }
+  .pietitulo {
+    color: $color2;
+    margin: 1rem;
+    font-size: 17.5px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  .pietexto {
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .pie__menu--elemento {
+    padding-top: 1rem;
+    list-style: none;
+    font-size: 14px;
+  }
+  .pie__a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION TABLET*/
+@media (min-width: 768px) {
+  .pie {
+    display: grid;
+    background-color: $color4;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px 50px;
+    border: 1px solid black;
+    padding: 30px 50px;
+    gap: 5px;
+    justify-content: center;
+    grid-template-areas: "cajauno cajados cajatres" "cajacuatro cajacinco cajaseis" "cajasiete cajaocho cajanueve" "cajadiez cajadiez cajadiez";
+  }
+  .pie__caja {
+    background-color: rgba(255, 255, 255, 0);
+    padding-top: 20px;
+  }
+  .pie__caja1 {
+    grid-area: cajauno;
+    display: flex;
+    flex-direction: column;
+  }
+  .pie__caja2 {
+    grid-area: cajados;
+  }
+  .pie__caja3 {
+    grid-area: cajatres;
+  }
+  .pie__caja4 {
+    grid-area: cajacuatro;
+  }
+  .pie__caja5 {
+    grid-area: cajacinco;
+  }
+  .pie__caja6 {
+    display: block;
+    grid-area: cajaseis;
+  }
+  .pie__caja7 {
+    grid-area: cajasiete;
+  }
+  .pie__caja8 {
+    grid-area: cajaocho;
+  }
+  .pie__caja9 {
+    display: block;
+    grid-area: cajanueve;
+  }
+  .pie__caja10 {
+    grid-area: cajadiez;
+  }
+  .pietitulo {
+    color: $color2;
+    margin: 1rem;
+    font-size: 15.5px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  .pietexto {
+    color: white;
+    font-size: 15.5px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .pie__menu--elemento {
+    padding-top: 1rem;
+    list-style: none;
+  }
+  .pie__a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION DESKTOP*/
+@media (min-width: 1200px) {
+  .pie {
+    display: grid;
+    background-color: $color4;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 50px;
+    border: 1px solid black;
+    padding: 30px 50px;
+    gap: 5px;
+    justify-content: center;
+    grid-template-areas: "cajauno cajados cajatres cajacuatro cajacinco cajaseis" "cajasiete cajasiete cajaocho cajaocho cajanueve cajanueve" "cajadiez cajadiez cajadiez cajadiez cajadiez cajadiez";
+  }
+  .pie__caja {
+    background-color: rgba(255, 255, 255, 0);
+    padding-top: 20px;
+  }
+  .pie__caja1 {
+    grid-area: cajauno;
+    display: flex;
+    flex-direction: column;
+  }
+  .pie__caja2 {
+    grid-area: cajados;
+  }
+  .pie__caja3 {
+    grid-area: cajatres;
+  }
+  .pie__caja4 {
+    grid-area: cajacuatro;
+  }
+  .pie__caja5 {
+    grid-area: cajacinco;
+  }
+  .pie__caja6 {
+    display: block;
+    grid-area: cajaseis;
+  }
+  .pie__caja7 {
+    grid-area: cajasiete;
+  }
+  .pie__caja8 {
+    grid-area: cajaocho;
+  }
+  .pie__caja9 {
+    display: block;
+    grid-area: cajanueve;
+  }
+  .pie__caja10 {
+    grid-area: cajadiez;
+  }
+  .pietitulo {
+    color: $color2;
+    margin: 1rem;
+    font-size: 17.5px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  .pietexto {
+    color: white;
+    font-size: 17.5px;
+    font-weight: 300;
+    text-align: center;
+  }
+  .pie__menu--elemento {
+    padding-top: 1rem;
+    list-style: none;
+  }
+  .pie__a {
+    text-decoration: none;
+    color: white;
+  }
+}

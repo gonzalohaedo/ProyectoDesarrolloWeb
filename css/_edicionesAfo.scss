@@ -1,0 +1,73 @@
+/*COMIENZO DE CODIGO PARA VERSION CELULAR*/
+@media (min-width: 320px) {
+  /*CODIGO GENERAL PARA LAS 3 SECCIONES - CODIGO PARA VERSION CELULAR*/
+  .edicion {
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.05);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px 600px;
+    padding: 1px;
+    gap: 1px;
+    justify-content: center;
+    grid-template-areas: "cajauno cajauno" "cajados cajados";
+    .edicion__titulo {
+      font-size: 22.5px;
+      font-weight: 800;
+      color: $color2;
+      padding-bottom: 10px;
+      padding-top: 30px;
+    }
+    .edicion__subtitulo {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: $color1;
+      padding-bottom: 20px;
+    }
+    .edicion__caja1 {
+      grid-area: cajauno;
+      background-position: center;
+      padding: 10px;
+    }
+    .edicion__caja2 {
+      grid-area: cajados;
+    }
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION TABLET*/
+@media (min-width: 768px) {
+}
+
+/*COMIENZO DE CODIGO PARA VERSION DESKTOP*/
+@media (min-width: 1200px) {
+  /*CODIGO GENERAL PARA LAS 3 SECCIONES - CODIGO PARA VERSION DESKTOP*/
+  .edicion {
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.05);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px;
+    gap: 5px;
+    justify-content: center;
+    grid-template-areas: "cajauno cajados";
+    .edicion__titulo {
+      font-size: 40px;
+      font-weight: 800;
+      color: $color2;
+      padding-bottom: 10px;
+    }
+    .edicion__subtitulo {
+      font-size: 17.5px;
+      font-weight: 600;
+      color: $color1;
+      padding-bottom: 20px;
+    }
+    .edicion__caja1 {
+      grid-area: cajauno;
+      background-position: center;
+      padding: 40px;
+    }
+    .edicion__caja2 {
+      grid-area: cajados;
+    }
+  }
+}

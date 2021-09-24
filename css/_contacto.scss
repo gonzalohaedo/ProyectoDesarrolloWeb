@@ -1,0 +1,167 @@
+/*COMIENZO DE CODIGO PARA VERSION CELULAR*/
+@media (min-width: 320px) {
+  /*UNICA SECCION DIVIDIDA EN TRES CAJAS - CODIGO PARA VERSION CELULAR*/
+  .contacto {
+    display: grid;
+    background-color: $color1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 500px 300px;
+    gap: 5px;
+    justify-content: center;
+    grid-template-areas: "cajauno cajauno" "cajados cajados" "cajatres cajatres";
+    .contacto__caja1 {
+      grid-area: cajauno;
+      background-image: linear-gradient($color2, white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .contacto__caja1--titulo {
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 900;
+        color: $color4;
+      }
+    }
+    .contacto__caja2 {
+      grid-area: cajados;
+      padding: 30px;
+      .contacto__caja2--titulo {
+        font-size: 17.5px;
+        font-weight: 800;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 30px;
+      }
+      .form-label {
+        font-size: 13.5px;
+        color: white;
+      }
+      .form-control {
+        height: 40px;
+        margin-bottom: 20px;
+        font-size: 13.5px;
+      }
+      .btn {
+        font-size: 13.5px;
+        background-color: $color2;
+      }
+    }
+    .contacto__caja3 {
+      grid-area: cajatres;
+      padding: 30px;
+      padding-left: 30px;
+      padding-right: 30px;
+      h2 {
+        font-size: 17.5px;
+        font-weight: 800;
+        color: white;
+        padding-top: 0px;
+        padding-bottom: 30px;
+      }
+      .contacto__caja3--item {
+        height: 60px;
+        .ico {
+          width: 30px;
+        }
+        p {
+          margin: 5px;
+          margin-left: 22.5px;
+          font-size: 13.5px;
+          color: white;
+        }
+        a {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+/*COMIENZO DE CODIGO PARA VERSION TABLET*/
+@media (min-width: 768px) {
+}
+
+/*COMIENZO DE CODIGO PARA VERSION DESKTOP*/
+@media (min-width: 1200px) {
+  /*UNICA SECCION DIVIDIDA EN TRES CAJAS - CODIGO PARA VERSION DESKTOP*/
+  .contacto {
+    display: grid;
+    background-color: $color1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px 600px;
+    gap: 5px;
+    justify-content: center;
+    grid-template-areas: "cajauno cajauno" "cajados cajatres";
+    .contacto__caja1 {
+      grid-area: cajauno;
+      background-image: linear-gradient($color2, white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .contacto__caja1--titulo {
+        font-size: 70px;
+        font-style: italic;
+        font-weight: 900;
+        color: $color4;
+      }
+    }
+    .contacto__caja2 {
+      grid-area: cajados;
+      padding: 40px;
+      padding-left: 75px;
+      padding-right: 75px;
+      .contacto__caja2--titulo {
+        font-size: 30px;
+        font-weight: 800;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 30px;
+      }
+      .form-label {
+        font-size: 17.5px;
+        color: white;
+      }
+      .form-control {
+        height: 40px;
+        margin-bottom: 20px;
+        font-size: 17.5px;
+      }
+      .btn {
+        font-size: 17.5px;
+        background-color: $color2;
+      }
+    }
+    .contacto__caja3 {
+      grid-area: cajatres;
+      padding: 40px;
+      padding-left: 75px;
+      padding-right: 75px;
+      h2 {
+        font-size: 30px;
+        font-weight: 800;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 30px;
+      }
+      .contacto__caja3--item {
+        height: 60px;
+        .ico {
+          width: 35px;
+        }
+        p {
+          margin: 5px;
+          margin-left: 22.5px;
+          font-size: 17.5px;
+          color: white;
+        }
+        a {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
