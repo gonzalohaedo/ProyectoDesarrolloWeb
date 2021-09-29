@@ -41,6 +41,14 @@
   }
   .pie__caja8 {
     grid-area: cajaocho;
+    input {
+      width: 200px;
+      margin-left: 20px;
+    }
+    button {
+      margin-left: 20px;
+      background-color: $color2;
+    }
   }
   .pie__caja9 {
     display: none;

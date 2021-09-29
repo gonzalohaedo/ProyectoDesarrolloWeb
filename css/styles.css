@@ -1419,6 +1419,14 @@ body {
     -ms-grid-column-span: 2;
     grid-area: cajaocho;
   }
+  .pie__caja8 input {
+    width: 200px;
+    margin-left: 20px;
+  }
+  .pie__caja8 button {
+    margin-left: 20px;
+    background-color: #6ac3dd;
+  }
   .pie__caja9 {
     display: none;
   }
