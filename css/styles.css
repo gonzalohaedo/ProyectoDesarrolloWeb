@@ -931,7 +931,7 @@ body {
     -ms-grid-column-span: 2;
     grid-area: cajados;
   }
-  /*Estilos de la galería*/
+  /*CODIGO GENERAL PARA LAS 3 SECCIONES - GALERÍA VERSION CELULAR*/
   .galeriat {
     width: 90%;
     margin: auto;
@@ -952,12 +952,18 @@ body {
     margin: 5px;
   }
   .galeriat img {
-    width: 115px;
-    height: 115px;
+    width: 100px;
+    height: 100px;
   }
-  /*Estilos deL modal*/
+  /*Estilos del modal*/
   .modalt {
     display: none;
+  }
+  .modalt h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0px;
   }
   .modalt:target {
     display: block;
@@ -967,12 +973,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-  }
-  .modalt h3 {
-    color: #fff;
-    font-size: 30px;
-    text-align: center;
-    margin: 15px 0px;
   }
   .imagent {
     width: 100%;
@@ -1067,12 +1067,12 @@ body {
     -ms-grid-column-span: 2;
     grid-area: cajados;
   }
-  /*Estilos de la galería*/
+  /*CODIGO GENERAL PARA LAS 3 SECCIONES - GALERÍA VERSION TABLET*/
   .galeriat {
     width: 90%;
     margin: auto;
     list-style: none;
-    padding-top: 10px;
+    padding-top: 150px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: -webkit-box;
@@ -1088,12 +1088,18 @@ body {
     margin: 5px;
   }
   .galeriat img {
-    width: 155px;
-    height: 155px;
+    width: 200px;
+    height: 200px;
   }
-  /*Estilos deL modal*/
+  /*Estilos del modal*/
   .modalt {
     display: none;
+  }
+  .modalt h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0px;
   }
   .modalt:target {
     display: block;
@@ -1103,12 +1109,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-  }
-  .modalt h3 {
-    color: #fff;
-    font-size: 30px;
-    text-align: center;
-    margin: 15px 0px;
   }
   .imagent {
     width: 100%;
@@ -1199,7 +1199,7 @@ body {
     -ms-grid-column: 2;
     grid-area: cajados;
   }
-  /*Estilos de la galería*/
+  /*CODIGO GENERAL PARA LAS 3 SECCIONES - GALERÍA VERSION DESKTOP*/
   .galeriat {
     width: 90%;
     margin: auto;
@@ -1223,9 +1223,15 @@ body {
     width: 200px;
     height: 200px;
   }
-  /*Estilos deL modal*/
+  /*Estilos del modal*/
   .modalt {
     display: none;
+  }
+  .modalt h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0px;
   }
   .modalt:target {
     display: block;
@@ -1235,12 +1241,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-  }
-  .modalt h3 {
-    color: #fff;
-    font-size: 30px;
-    text-align: center;
-    margin: 15px 0px;
   }
   .imagent {
     width: 100%;
