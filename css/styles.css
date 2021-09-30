@@ -895,8 +895,8 @@ body {
     background-color: rgba(0, 0, 0, 0.05);
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 400px 400px;
-        grid-template-rows: 400px 400px;
+    -ms-grid-rows: 600px 400px;
+        grid-template-rows: 600px 400px;
     padding: 1px;
     gap: 1px;
     -webkit-box-pack: center;
@@ -936,7 +936,7 @@ body {
     width: 90%;
     margin: auto;
     list-style: none;
-    padding-top: 100px;
+    padding-top: 150px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: -webkit-box;
@@ -952,8 +952,8 @@ body {
     margin: 5px;
   }
   .galeriat img {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
   }
   /*Estilos del modal*/
   .modalt {
@@ -1024,15 +1024,15 @@ body {
 
 /*COMIENZO DE CODIGO PARA VERSION TABLET*/
 @media (min-width: 768px) {
-  /*CODIGO GENERAL PARA LAS 3 SECCIONES - CODIGO PARA VERSION CELULAR*/
+  /*CODIGO GENERAL PARA LAS 3 SECCIONES - CODIGO PARA VERSION TABLET*/
   .edicion {
     display: -ms-grid;
     display: grid;
     background-color: rgba(0, 0, 0, 0.05);
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 600px 250px;
-        grid-template-rows: 600px 250px;
+    -ms-grid-rows: 400px 400px;
+        grid-template-rows: 400px 400px;
     padding: 1px;
     gap: 1px;
     -webkit-box-pack: center;
@@ -1088,8 +1088,8 @@ body {
     margin: 5px;
   }
   .galeriat img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   /*Estilos del modal*/
   .modalt {
