@@ -895,8 +895,8 @@ body {
     background-color: rgba(0, 0, 0, 0.05);
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 600px 600px;
-        grid-template-rows: 600px 600px;
+    -ms-grid-rows: 600px 400px;
+        grid-template-rows: 600px 400px;
     padding: 1px;
     gap: 1px;
     -webkit-box-pack: center;
@@ -931,9 +931,233 @@ body {
     -ms-grid-column-span: 2;
     grid-area: cajados;
   }
+  /*Estilos de la galería*/
+  .galeriat {
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding-top: 100px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .galeriat li {
+    margin: 5px;
+  }
+  .galeriat img {
+    width: 115px;
+    height: 115px;
+  }
+  /*Estilos deL modal*/
+  .modalt {
+    display: none;
+  }
+  .modalt:target {
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .modalt h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0px;
+  }
+  .imagent {
+    width: 100%;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .imagent a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .imagent a:nth-child(2) {
+    margin: 0px;
+    height: 100%;
+    -ms-flex-negative: 2;
+        flex-shrink: 2;
+  }
+  .imagent img {
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .cerrart {
+    display: block;
+    background: rgba(255, 255, 255, 0);
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 5px;
+    border-radius: 0%;
+    line-height: 175px;
+  }
 }
 
 /*COMIENZO DE CODIGO PARA VERSION TABLET*/
+@media (min-width: 768px) {
+  /*CODIGO GENERAL PARA LAS 3 SECCIONES - CODIGO PARA VERSION CELULAR*/
+  .edicion {
+    display: -ms-grid;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.05);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 600px 250px;
+        grid-template-rows: 600px 250px;
+    padding: 1px;
+    gap: 1px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajauno" "cajados cajados";
+  }
+  .edicion .edicion__titulo {
+    font-size: 22.5px;
+    font-weight: 800;
+    color: #6ac3dd;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+  .edicion .edicion__subtitulo {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #416296;
+    padding-bottom: 20px;
+  }
+  .edicion .edicion__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajauno;
+    background-position: center;
+    padding: 10px;
+  }
+  .edicion .edicion__caja2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajados;
+  }
+  /*Estilos de la galería*/
+  .galeriat {
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding-top: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .galeriat li {
+    margin: 5px;
+  }
+  .galeriat img {
+    width: 155px;
+    height: 155px;
+  }
+  /*Estilos deL modal*/
+  .modalt {
+    display: none;
+  }
+  .modalt:target {
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .modalt h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0px;
+  }
+  .imagent {
+    width: 100%;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .imagent a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .imagent a:nth-child(2) {
+    margin: 0px;
+    height: 100%;
+    -ms-flex-negative: 2;
+        flex-shrink: 2;
+  }
+  .imagent img {
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .cerrart {
+    display: block;
+    background: rgba(255, 255, 255, 0);
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 5px;
+    border-radius: 0%;
+    line-height: 175px;
+  }
+}
+
 /*COMIENZO DE CODIGO PARA VERSION DESKTOP*/
 @media (min-width: 1200px) {
   /*CODIGO GENERAL PARA LAS 3 SECCIONES - CODIGO PARA VERSION DESKTOP*/
@@ -974,6 +1198,95 @@ body {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: cajados;
+  }
+  /*Estilos de la galería*/
+  .galeriat {
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding-top: 150px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .galeriat li {
+    margin: 5px;
+  }
+  .galeriat img {
+    width: 200px;
+    height: 200px;
+  }
+  /*Estilos deL modal*/
+  .modalt {
+    display: none;
+  }
+  .modalt:target {
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .modalt h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0px;
+  }
+  .imagent {
+    width: 100%;
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .imagent a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .imagent a:nth-child(2) {
+    margin: 0px;
+    height: 100%;
+    -ms-flex-negative: 2;
+        flex-shrink: 2;
+  }
+  .imagent img {
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .cerrart {
+    display: block;
+    background: rgba(255, 255, 255, 0);
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 5px;
+    border-radius: 0%;
+    line-height: 175px;
   }
 }
 
