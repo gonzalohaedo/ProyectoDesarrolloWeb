@@ -936,7 +936,7 @@ body {
     width: 90%;
     margin: auto;
     list-style: none;
-    padding-top: 50px;
+    padding-top: 1px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: -webkit-box;
@@ -952,8 +952,8 @@ body {
     margin: 5px;
   }
   .galeriat img {
-    width: 110px;
-    height: 110px;
+    width: 150px;
+    height: 150px;
   }
   /*Estilos del modal*/
   .modalt {
