@@ -1591,6 +1591,91 @@ body {
 }
 
 /*COMIENZO DE CODIGO PARA VERSION TABLET*/
+@media (min-width: 768px) {
+  /*UNICA SECCION DIVIDIDA EN TRES CAJAS - CODIGO PARA VERSION TABLET*/
+  .inscripcion {
+    display: -ms-grid;
+    display: grid;
+    background-color: #416296;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 150px 350px 775px;
+        grid-template-rows: 150px 350px 775px;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        grid-template-areas: "cajauno cajauno" "cajados cajados" "cajatres cajatres";
+  }
+  .inscripcion .inscripcion__caja1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajauno;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#6ac3dd), to(white));
+    background-image: linear-gradient(#6ac3dd, white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inscripcion .inscripcion__caja1 .inscripcion__caja1--titulo {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 900;
+    color: #1a1a1f;
+  }
+  .inscripcion .inscripcion__caja2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajados;
+    padding: 30px;
+  }
+  .inscripcion .inscripcion__caja2 .inscripcion__caja2--titulo {
+    font-size: 17.5px;
+    font-weight: 800;
+    color: white;
+    padding-bottom: 30px;
+  }
+  .inscripcion .inscripcion__texto {
+    color: white;
+    font-size: 13.5px;
+    font-weight: 300;
+  }
+  .inscripcion .inscripcion__caja3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: cajatres;
+    padding: 30px;
+  }
+  .inscripcion .inscripcion__caja3 h2 {
+    font-size: 17.5px;
+    font-weight: 800;
+    color: white;
+    padding-bottom: 30px;
+  }
+  .inscripcion .inscripcion__caja3 .form-label {
+    font-size: 17.5px;
+    color: white;
+  }
+  .inscripcion .inscripcion__caja3 .form-control {
+    height: 30px;
+    margin-bottom: 20px;
+    font-size: 17.5px;
+  }
+  .inscripcion .inscripcion__caja3 .btn {
+    font-size: 17.5px;
+    background-color: #6ac3dd;
+  }
+}
+
 /*COMIENZO DE CODIGO PARA VERSION DESKTOP*/
 @media (min-width: 1200px) {
   /*UNICA SECCION DIVIDIDA EN TRES CAJAS - CODIGO PARA VERSION DESKTOP*/

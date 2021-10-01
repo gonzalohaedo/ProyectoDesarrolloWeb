@@ -66,6 +66,67 @@
 
 /*COMIENZO DE CODIGO PARA VERSION TABLET*/
 @media (min-width: 768px) {
+  /*UNICA SECCION DIVIDIDA EN TRES CAJAS - CODIGO PARA VERSION TABLET*/
+  .inscripcion {
+    display: grid;
+    background-color: $color1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 350px 775px;
+    gap: 5px;
+    justify-content: center;
+    grid-template-areas: "cajauno cajauno" "cajados cajados" "cajatres cajatres";
+    .inscripcion__caja1 {
+      grid-area: cajauno;
+      background-image: linear-gradient($color2, white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .inscripcion__caja1--titulo {
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 900;
+        color: $color4;
+      }
+    }
+    .inscripcion__caja2 {
+      grid-area: cajados;
+      padding: 30px;
+      .inscripcion__caja2--titulo {
+        font-size: 17.5px;
+        font-weight: 800;
+        color: white;
+        padding-bottom: 30px;
+      }
+    }
+    .inscripcion__texto {
+      color: white;
+      font-size: 13.5px;
+      font-weight: 300;
+    }
+    .inscripcion__caja3 {
+      grid-area: cajatres;
+      padding: 30px;
+      h2 {
+        font-size: 17.5px;
+        font-weight: 800;
+        color: white;
+        padding-bottom: 30px;
+      }
+      .form-label {
+        font-size: 17.5px;
+        color: white;
+      }
+      .form-control {
+        height: 30px;
+        margin-bottom: 20px;
+        font-size: 17.5px;
+      }
+      .btn {
+        font-size: 17.5px;
+        background-color: $color2;
+      }
+    }
+  }
 }
 
 /*COMIENZO DE CODIGO PARA VERSION DESKTOP*/
