@@ -5,7 +5,7 @@
     display: grid;
     background-color: $color1;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 600px 600px;
+    grid-template-rows: 150px 800px 725px;
     gap: 5px;
     justify-content: center;
     grid-template-areas: "cajauno cajauno" "cajados cajados" "cajatres cajatres";
@@ -33,13 +33,33 @@
       }
     }
     .inscripcion__texto {
-      color: black;
+      color: white;
       font-size: 13.5px;
       font-weight: 300;
     }
     .inscripcion__caja3 {
       grid-area: cajatres;
       padding: 30px;
+      h2 {
+        font-size: 30px;
+        font-weight: 800;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 30px;
+      }
+      .form-label {
+        font-size: 17.5px;
+        color: white;
+      }
+      .form-control {
+        height: 40px;
+        margin-bottom: 20px;
+        font-size: 17.5px;
+      }
+      .btn {
+        font-size: 17.5px;
+        background-color: $color2;
+      }
     }
   }
 }
@@ -55,7 +75,7 @@
     display: grid;
     background-color: $color1;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 350px 600px;
+    grid-template-rows: 350px 800px;
     gap: 5px;
     justify-content: center;
     grid-template-areas: "cajauno cajauno" "cajados cajatres";
@@ -84,7 +104,7 @@
       }
     }
     .inscripcion__texto {
-      color: black;
+      color: rgb(255, 255, 255);
       font-size: 17.5px;
       font-weight: 300;
     }

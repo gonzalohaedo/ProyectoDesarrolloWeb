@@ -1512,8 +1512,8 @@ body {
     background-color: #416296;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 150px 600px 600px;
-        grid-template-rows: 150px 600px 600px;
+    -ms-grid-rows: 150px 800px 725px;
+        grid-template-rows: 150px 800px 725px;
     gap: 5px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1557,7 +1557,7 @@ body {
     padding-bottom: 30px;
   }
   .inscripcion .inscripcion__texto {
-    color: black;
+    color: white;
     font-size: 13.5px;
     font-weight: 300;
   }
@@ -1567,6 +1567,26 @@ body {
     -ms-grid-column-span: 2;
     grid-area: cajatres;
     padding: 30px;
+  }
+  .inscripcion .inscripcion__caja3 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .inscripcion .inscripcion__caja3 .form-label {
+    font-size: 17.5px;
+    color: white;
+  }
+  .inscripcion .inscripcion__caja3 .form-control {
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 17.5px;
+  }
+  .inscripcion .inscripcion__caja3 .btn {
+    font-size: 17.5px;
+    background-color: #6ac3dd;
   }
 }
 
@@ -1580,8 +1600,8 @@ body {
     background-color: #416296;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 350px 600px;
-        grid-template-rows: 350px 600px;
+    -ms-grid-rows: 350px 800px;
+        grid-template-rows: 350px 800px;
     gap: 5px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1625,7 +1645,7 @@ body {
     padding-bottom: 30px;
   }
   .inscripcion .inscripcion__texto {
-    color: black;
+    color: white;
     font-size: 17.5px;
     font-weight: 300;
   }
