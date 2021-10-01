@@ -74,6 +74,42 @@
 
 /*COMIENZO DE CODIGO PARA VERSION TABLET*/
 @media (min-width: 768px) {
+  .presentacion {
+    height: 550px;
+  }
+
+  /*TERCERA SECCION | ESPACIO PARA LOS SPONSORS - CODIGO CORRESPONDIENTE A VERSION TABLET*/
+  .sponsors {
+    display: grid;
+    background-color: $color2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px;
+    padding: 5px;
+    gap: 5px;
+    justify-content: center;
+    grid-template-areas: "cajauno cajados" "cajatres cajacuatro";
+    .sponsors__caja {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .sponsors__caja1 {
+      grid-area: cajauno;
+    }
+    .sponsors__caja2 {
+      grid-area: cajados;
+    }
+    .sponsors__caja3 {
+      grid-area: cajatres;
+    }
+    .sponsors__caja4 {
+      grid-area: cajacuatro;
+    }
+    .sponsors__logo {
+      width: 50%;
+    }
+  }
 }
 
 /*COMIENZO DE CODIGO PARA VERSION DESKTOP*/
@@ -81,6 +117,7 @@
   /*SEGUNDA SECCION | ESPACIO PARA LA PRESENTACION - CODIGO PARA VERSION DESKTOP*/
   .presentacion {
     display: flex;
+    height: 800px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -118,5 +155,8 @@
     position: relative;
     background-image: linear-gradient(white, $color2);
     height: 50vh;
+    .sponsors__logo {
+      width: 90%;
+    }
   }
 }
